@@ -1,0 +1,47 @@
+
+    <!-- includes header -->
+
+    <%-include('includes/_header.ejs')%>
+
+    <!-- /includes header -->
+
+
+   
+
+        <style type="text/css">
+            body{
+                background-color: rgb(106, 106, 179);  
+                height: 100%;      
+            }
+            input{
+                width: 400px;
+                height: 45px;
+            }
+            .fs{
+                font-size: 11px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- <div class="bg-light d-flex text-center">
+            <a href="/" class="text-decoration-none fw-bolder text-dark p-4 m-auto">User management System</a>
+          </div> -->
+    <br>
+<div class="ms-5"><a href="/api/users"><button class="btn border-black btn-primary ">All users</button></a>
+</div>
+
+
+<div class="container text-center fs-3 mb-4"><u>Add new user</u>
+    <p class="fs">You can add your details here</details></p>
+</div>
+
+    <%-include('includes/_form.ejs')%>
+
+
+
+      <!-- includes footer -->
+
+      <%-include('includes/_footer.ejs')%>
+
+      <!-- /includes footer -->

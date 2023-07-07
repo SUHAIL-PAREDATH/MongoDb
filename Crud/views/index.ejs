@@ -1,0 +1,38 @@
+
+    <!-- includes header -->
+
+    <%-include('includes/_header.ejs')%>
+
+    <!-- /includes header -->
+
+<!-- main section -->
+<a href="/logout"><button type="button" class="float-end btn btn-dark float-end m-5">Log Out</button></a>
+
+    <div class="justify-content-center align-items-center m-auto w-50 mt-5">
+      <form action="/" method="post">
+      <table class="table table-bordered w-100 " >
+          <thead>
+            <tr>      
+              <!-- <th class="col">Id</th>           -->
+              <th class="col">Name</th>
+              <th class="col">Department</th>
+              <th class="col">Phone</th>
+              <th class="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%-include('includes/_show.ejs')%>
+          </tbody>
+        </table>
+      </form>
+      
+        <a href="/add-user"><button type="button" class="btn btn-dark float-end">Add User</button></a>
+      </div>
+<!-- /main section -->    
+
+
+    <!-- includes footer -->
+
+  <%-include('includes/_footer.ejs')%>
+
+  <!-- /includes footer -->

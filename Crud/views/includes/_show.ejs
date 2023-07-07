@@ -1,0 +1,12 @@
+<% for(var i=0; i< users.length;i++){%>
+    <tr class="hovershow" >
+        <!-- <td><%= i+1 %></td> -->
+        <td><%= users[i].name %></td>
+        <td><%= users[i].department %></td>
+        <td><%= users[i].phone %></td>
+        <td style="width: 140px;">
+            <a href="/update-user?id=<%=users[i]._id%>"><button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></button></a>
+            <a class="delete-btn float-end" data-id="<%=users[i]._id%>"><button type="button" class="btn btn-primary "><i class="fas fa-times"></i></button></a>
+        </td>
+      </tr>
+      <% } %>
